@@ -9,8 +9,8 @@ const app = express();
 const s3 = new aws.S3();
 
 aws.config.update({
-    secretAccessKey: "AKIAIR5DHYPD2U4J5XRQ",
-    accessKeyId: "YM1o9rdpWzM9qHwSaBdNEcycWfK2bFDnj4RONJMN",
+    secretAccessKey: process.env.AWS_SERVICES,
+    accessKeyId: process.env.AWS_SERVICES,
     region: 'us-east-2'
 });
 
